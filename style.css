@@ -1,0 +1,71 @@
+#main {
+/*    max-width: 320px;
+    height: 377px;*/
+}
+
+#inputs {
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#numberBox {
+    width: 310px;
+    height: 310px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+#operators {
+    width: 100px;
+    margin-left: 5px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+#equals {
+    width: 205px;
+}
+
+#output, .box {
+    margin: 0;
+    border: 1px solid #000;
+}
+
+.row {
+
+}
+
+#output {
+    width: 415px;
+    height: 50px;
+    margin-bottom: 5px;
+    text-align: right;
+    line-height: 50px;
+    box-sizing: border-box;
+    padding-right: 20px;
+}
+
+.box {
+    line-height: 100px;
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+.box:hover {
+    background: #d9d9d9;
+}
+
+#test {
+    width: 310px;
+    margin-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
