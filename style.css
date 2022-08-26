@@ -1,6 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&family=Source+Code+Pro&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    /*font-family: 'Silkscreen', cursive;*/
+    font-family: 'Source Code Pro', monospace;
+    text-align: center;
+}
+
+#xtra {
+    font-style: italic;
+    font-family: 'Silkscreen', cursive;
+}
 #main {
-/*    max-width: 320px;
-    height: 377px;*/
+    margin: 0 auto;
+    width: 415px;
+}
+
+#outputBox {
+    margin-bottom: 5px;
+    padding: 0 3px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #000;
+}
+
+#clear {
+    margin: 0 0 0 5px;
+    text-align: center;
+    line-height: 50px;
+}
+
+#clear:hover {
+    font-style: italic;
+    opacity: .8;
+    cursor: pointer;
+}
+
+#output {
+    width: 330px;
+    height: 50px;
+    text-align: right;
+    line-height: 50px;
+    box-sizing: border-box;
+    padding-right: 20px;
+}
+
+#bckspc {
+    margin-right: 5px;
+    height: 25px;
+    opacity: .4;
+}
+
+#bckspc:hover {
+    cursor: pointer;
+    opacity: .5;
 }
 
 #inputs {
@@ -31,23 +90,13 @@
     width: 205px;
 }
 
-#output, .box {
+.box {
     margin: 0;
     border: 1px solid #000;
 }
 
 .row {
 
-}
-
-#output {
-    width: 415px;
-    height: 50px;
-    margin-bottom: 5px;
-    text-align: right;
-    line-height: 50px;
-    box-sizing: border-box;
-    padding-right: 20px;
 }
 
 .box {
@@ -60,6 +109,7 @@
 
 .box:hover {
     background: #d9d9d9;
+    cursor: pointer;
 }
 
 #test {

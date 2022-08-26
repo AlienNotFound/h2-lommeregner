@@ -7,7 +7,12 @@
 </head>
 <body>
     <div id="main">
-        <input type="text" id="output">
+        <h1>myCalc();</h1>
+        <div id="outputBox">
+            <p id="clear" onclick="clearInput()">Clear</p>
+            <div id="output"></div>
+            <img id="bckspc" src="/icons/delete-left-solid.svg" alt="backspace icon" onclick="bckspcInput()">
+        </div>
         <div id="inputs">
             <div id="col1">
                 <div id="numberBox">
@@ -29,12 +34,13 @@
             </div>
 
             <div id="operators">
-                <div id="plus" onclick="plus()" class="box">+</div>
-                <div id="minus" onclick="minus()" class="box">-</div>
-                <div id="times" onclick="times()" class="box">*</div>
-                <div id="divide" onclick="divide()" class="box">/</div>
+                <div id="plus" onclick="operator('+')" class="box opId">+</div>
+                <div id="minus" onclick="operator('-')" class="box opId">-</div>
+                <div id="times" onclick="operator('*')" class="box opId">*</div>
+                <div id="divide" onclick="operator('/')" class="box opId">/</div>
             </div>
         </div>
+        <div id="xtra"></div>
     </div>
 
 </body>
