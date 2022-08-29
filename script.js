@@ -3,31 +3,20 @@ outputBox.innerText = "0"
 
 var numButtons = document.getElementsByClassName("numb")
 
-for (let i = 0; i < numButtons.length; i++) {
-    document.getElementById("" + i + "").onclick = function () {
-        console.log(i)
-        if(outputBox.innerText === "0") {
-            outputBox.innerText = "" + i + ""
-        } else {
-            outputBox.innerText += "" + i + ""
-        }
-    }
-}
-
-document.getElementById("0").onclick = function () {
-    if(outputBox.innerText !== "0") {
-        outputBox.innerText += 0
-    }
-}
-
 document.addEventListener('keydown', (event) => {
     var keyName = event.key;
     var keyCode = event.code;
     var p = ["NumpadAdd", "NumpadSubtract", "NumpadDivide", "NumpadMultiply"]
 
-    console.log(keyCode)
+    for (let i = 0; i < numButtons.length; i++) {
+        document.getElementById("" + i + "").onclick = function () {
+            if(outputBox.innerText === "0") {
+                outputBox.innerText = "" + i + ""
+            } else {
+                outputBox.innerText += "" + i + ""
+            }
+        }
 
-    for (let i = 0; i < 10; i++) {
         if (parseInt(keyName) === i) {
             if(outputBox.innerText === "0") {
                 outputBox.innerText = keyName
@@ -44,10 +33,10 @@ document.addEventListener('keydown', (event) => {
             }
         }
     }
-        switch (keyCode) {
+
+    switch (keyCode) {
             case "Backspace":
                 bckspcInput();
-                console.log("test")
                 break;
 
             case "Delete":
@@ -62,8 +51,6 @@ document.addEventListener('keydown', (event) => {
                 equals();
                 break;
         }
-
-    console.log(keyCode)
 })
 
 function clearInput() {
@@ -113,4 +100,3 @@ function equals() {
         document.getElementById("xtra").innerText = ""
     }
 }
-

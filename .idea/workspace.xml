@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bdd3f1d9-804f-4c11-b356-091c565329e1" name="Changes" comment="More from git">
-      <change afterPath="$PROJECT_DIR$/jqScript.js" afterDir="false" />
+    <list default="true" id="bdd3f1d9-804f-4c11-b356-091c565329e1" name="Changes" comment="Begun jQuery">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +77,7 @@
       <workItem from="1661496084553" duration="16757000" />
       <workItem from="1661517467003" duration="14271000" />
       <workItem from="1661755772509" duration="1399000" />
-      <workItem from="1661783395997" duration="472000" />
+      <workItem from="1661783395997" duration="2285000" />
     </task>
     <task id="LOCAL-00001" summary="JavaScript calc done">
       <created>1661541769825</created>
@@ -95,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661548025097</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Begun jQuery">
+      <created>1661783895583</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1661783895583</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,6 +120,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="JavaScript calc done" />
     <MESSAGE value="More from git" />
-    <option name="LAST_COMMIT_MESSAGE" value="More from git" />
+    <MESSAGE value="Begun jQuery" />
+    <option name="LAST_COMMIT_MESSAGE" value="Begun jQuery" />
   </component>
 </project>
