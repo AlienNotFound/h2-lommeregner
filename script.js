@@ -3,8 +3,9 @@ outputBox.innerText = "0"
 
 var numButtons = document.getElementsByClassName("numb")
 
-for (let i = 1; i < numButtons.length + 1; i++) {
-    document.getElementById(i).onclick = function () {
+for (let i = 0; i < numButtons.length; i++) {
+    document.getElementById("" + i + "").onclick = function () {
+        console.log(i)
         if(outputBox.innerText === "0") {
             outputBox.innerText = "" + i + ""
         } else {
@@ -23,6 +24,8 @@ document.addEventListener('keydown', (event) => {
     var keyName = event.key;
     var keyCode = event.code;
     var p = ["NumpadAdd", "NumpadSubtract", "NumpadDivide", "NumpadMultiply"]
+
+    console.log(keyCode)
 
     for (let i = 0; i < 10; i++) {
         if (parseInt(keyName) === i) {
@@ -44,6 +47,7 @@ document.addEventListener('keydown', (event) => {
         switch (keyCode) {
             case "Backspace":
                 bckspcInput();
+                console.log("test")
                 break;
 
             case "Delete":
@@ -103,7 +107,7 @@ function equals() {
         console.log(parseInt(word[0]) / parseInt(word[1]))
     }
 
-    if(outputBox.innerText === "69" || outputBox.innerText === "420") {
+    if(outputBox.innerText === "69" || outputBox.innerText === "420" || outputBox.innerText === "58008" || outputBox.innerText === "80085") {
         document.getElementById("xtra").innerText = "Nice."
     } else {
         document.getElementById("xtra").innerText = ""
