@@ -7,44 +7,45 @@
     <script src="jquery-3.6.1.min.js"></script>
 </head>
 <body>
-    <div id="main">
-        <h1>myCalc();</h1>
-        <div id="outputBox">
-            <p id="clear" onclick="clearInput()">Clear</p>
-            <div id="output"></div>
-            <img id="bckspc" src="/icons/delete-left-solid.svg" alt="backspace icon" onclick="bckspcInput()">
-        </div>
-        <div id="inputs">
-            <div id="col1">
-                <div id="numberBox">
-                    <div id="1" class="numb box">1</div>
-                    <div id="2" class="numb box">2</div>
-                    <div id="3" class="numb box">3</div>
-                    <div id="4" class="numb box">4</div>
-                    <div id="5" class="numb box">5</div>
-                    <div id="6" class="numb box">6</div>
-                    <div id="7" class="numb box">7</div>
-                    <div id="8" class="numb box">8</div>
-                    <div id="9" class="numb box">9</div>
-                </div>
-
-                <div id="test">
-                    <div id="0" class="numb box">0</div>
-                    <div id="equals" onclick="equals()" class="box">=</div>
-                </div>
-            </div>
-
-            <div id="operators">
-                <div id="plus" onclick="operator('+')" class="box opId">+</div>
-                <div id="minus" onclick="operator('-')" class="box opId">-</div>
-                <div id="times" onclick="operator('*')" class="box opId">*</div>
-                <div id="divide" onclick="operator('/')" class="box opId">/</div>
-            </div>
-        </div>
-        <div id="xtra"></div>
+<div id="main">
+    <h1>myCalc();</h1>
+    <div id="outputBox">
+        <p id="clear" onclick="$.fn.bckspcInput()">Clear</p>
+        <div id="output"></div>
+        <img id="bckspc" src="/icons/delete-left-solid.svg" alt="backspace icon" onclick="bckspcInput()">
     </div>
+    <div id="inputs">
+        <div id="col1">
+            <div id="numberBox">
+                <div id="1" class="numb box">1</div>
+                <div id="2" class="numb box">2</div>
+                <div id="3" class="numb box">3</div>
+                <div id="4" class="numb box">4</div>
+                <div id="5" class="numb box">5</div>
+                <div id="6" class="numb box">6</div>
+                <div id="7" class="numb box">7</div>
+                <div id="8" class="numb box">8</div>
+                <div id="9" class="numb box">9</div>
+            </div>
+
+            <div id="test">
+                <div id="0" class="numb box">0</div>
+                <div id="equals" onclick="equals()" class="box">=</div>
+            </div>
+        </div>
+
+        <div id="operators">
+            <div id="plus" onclick="operator('+')" class="box opId">+</div>
+            <div id="minus" onclick="operator('-')" class="box opId">-</div>
+            <div id="times" onclick="operator('*')" class="box opId">*</div>
+            <div id="divide" onclick="operator('/')" class="box opId">/</div>
+        </div>
+    </div>
+    <div id="xtra"></div>
+</div>
 
 </body>
-<!--    <script src="jqScript.js"></script>-->
-    <script type="text/javascript" src="script.js"></script>
+    <script src="jqScript.js"></script>
+<!--    <script type="text/javascript" src="script.js"></script>-->
+<!--    <script src="ts-dist/scriptTS.js"></script>-->
 </html>
