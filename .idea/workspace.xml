@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bdd3f1d9-804f-4c11-b356-091c565329e1" name="Changes" comment="More jq work">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="bdd3f1d9-804f-4c11-b356-091c565329e1" name="Changes" comment="Save">
+      <change afterPath="$PROJECT_DIR$/jQueryCalc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/lommeregner.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/lommeregner.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jqScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/jqScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,11 +18,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
         <option value="JavaScript File" />
         <option value="TypeScript File" />
         <option value="tsconfig.json" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -67,13 +70,14 @@
     "list.type.of.created.stylesheet": "CSS",
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "C:\\Users\\Adam\\Documents\\repo\\lommeregner\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "settings.webpack",
+    "settings.editor.selected.configurable": "JavaScript.Libraries",
     "ts.external.directory.path": "C:\\Users\\Adam\\AppData\\Local\\JetBrains\\Toolbox\\apps\\WebStorm\\ch-0\\222.3739.57\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Adam\Documents\repo\lommeregner" />
       <recent name="C:\Users\Adam\Documents\repo\lommeregner\ts-dist" />
     </key>
   </component>
@@ -119,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661785793435</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Save">
+      <created>1662444620637</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1662444620637</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,6 +158,7 @@
     <MESSAGE value="More from git" />
     <MESSAGE value="Begun jQuery" />
     <MESSAGE value="Cleaned up JS" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleaned up JS" />
+    <MESSAGE value="Save" />
+    <option name="LAST_COMMIT_MESSAGE" value="Save" />
   </component>
 </project>

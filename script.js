@@ -1,12 +1,12 @@
-var outputBox = document.getElementById("output")
+const outputBox = document.getElementById("output")
 outputBox.innerText = "0"
 
-var numButtons = document.getElementsByClassName("numb")
+const numButtons = document.getElementsByClassName("numb")
 
 document.addEventListener('keydown', (event) => {
-    var keyName = event.key;
-    var keyCode = event.code;
-    var p = ["NumpadAdd", "NumpadSubtract", "NumpadDivide", "NumpadMultiply"]
+    const keyName = event.key;
+    const keyCode = event.code;
+    const p = ["NumpadAdd", "NumpadSubtract", "NumpadDivide", "NumpadMultiply"]
 
     for (let i = 0; i < numButtons.length; i++) {
         document.getElementById("" + i + "").onclick = function () {
@@ -71,6 +71,7 @@ function operator(x) {
 }
 
 function equals() {
+    let word;
     if(outputBox.innerText.includes("+"))
     {
         word = outputBox.innerText.split('+')
@@ -94,7 +95,11 @@ function equals() {
         console.log(parseInt(word[0]) / parseInt(word[1]))
     }
 
-    if(outputBox.innerText === "69" || outputBox.innerText === "420" || outputBox.innerText === "58008" || outputBox.innerText === "80085") {
+    if(outputBox.innerText === "69" ||
+        outputBox.innerText === "420"
+        || outputBox.innerText === "58008"
+        || outputBox.innerText === "80085")
+    {
         document.getElementById("xtra").innerText = "Nice."
     } else {
         document.getElementById("xtra").innerText = ""
