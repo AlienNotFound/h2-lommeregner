@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&family=Source+Code+Pro&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+#main {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.col2 {
+    width: 30px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.col2 img {
+    max-width: 100%;
+    margin-bottom: 20px;
+    filter: saturate(0) brightness(1);
+}
+
+.col3 {
+    width: 415px;
+}
+
+h1 {
+    /*font-family: 'Silkscreen', cursive;*/
+    font-family: 'Source Code Pro', monospace;
+    text-align: center;
+}
+
+#xtra {
+    font-style: italic;
+    font-family: 'Silkscreen', cursive;
+}
+
+#outputBox {
+    margin-bottom: 5px;
+    padding: 0 3px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #000;
+}
+
+#clear {
+    margin: 0 0 0 5px;
+    text-align: center;
+    line-height: 50px;
+}
+
+#clear:hover {
+    font-style: italic;
+    opacity: .8;
+    cursor: pointer;
+}
+
+#output {
+    width: 330px;
+    height: 50px;
+    text-align: right;
+    line-height: 50px;
+    box-sizing: border-box;
+    padding-right: 20px;
+}
+
+#bckspc {
+    margin-right: 5px;
+    height: 25px;
+    opacity: .4;
+}
+
+#bckspc:hover {
+    cursor: pointer;
+    opacity: .5;
+}
+
+#inputs {
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#numberBox {
+    width: 310px;
+    height: 310px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+#operators {
+    width: 100px;
+    margin-left: 5px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+#equals {
+    width: 205px;
+}
+
+.box {
+    margin: 0;
+    border: 1px solid #000;
+}
+
+.row {
+
+}
+
+.box {
+    line-height: 100px;
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+.box:hover {
+    background: #d9d9d9;
+    cursor: pointer;
+}
+
+#test {
+    width: 310px;
+    margin-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="jquery-3.6.1.min.js"></script>
+  <title>JQuery</title>
+  <link rel="stylesheet" href="src/style.css">
+  <script src="src/jquery-3.6.1.min.js"></script>
 </head>
 <body>
 <div id="main">
@@ -15,14 +15,17 @@
     <a href="jQueryCalc.html">
       <img alt="jq-icon" src="icons/jquery-icon.svg">
     </a>
+    <a href="tsCalc.html">
+      <img alt="jq-icon" src="icons/typescript.png">
+    </a>
   </div>
 
   <div class="col3">
-    <h1>myCalc();</h1>
+    <h1>myCalc(<span style="color: #1064a5">jQuery</span>);</h1>
     <div id="outputBox">
       <p id="clear">Clear</p>
       <div id="output"></div>
-      <img id="bckspc" src="/icons/delete-left-solid.svg" alt="backspace icon" onclick="bckspcInput()">
+      <img id="bckspc" src="/icons/delete-left-solid.svg" alt="backspace icon" onclick="backspaceInput()">
     </div>
     <div id="inputs">
       <div id="col1">
@@ -57,5 +60,5 @@
 
 </div>
 </body>
-<script src="jqScript.js"></script>
+<script src="src/jqScript.js"></script>
 </html>
