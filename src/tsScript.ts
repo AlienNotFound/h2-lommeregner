@@ -1,34 +1,41 @@
-const outputBox = document.getElementById("output")
+const outputBox = document.getElementById("output") as HTMLElement;
 outputBox.innerHTML = "0";
 
-const numButtons = document.getElementsByClassName("numb")
+const numButtons = document.getElementsByClassName("numb") as HTMLCollection;
+
+for(let i = 0; i < numButtons.length; i++) {
+    const numBtn =  document.getElementById("" + i + "") as HTMLElement;
+
+    numBtn.onclick = function () {
+        if(outputBox.innerText === "0") {
+            outputBox.innerText = "" + i + ""
+        } else {
+            outputBox.innerText += "" + i + ""
+        }
+    }
+}
 
 document.addEventListener('keydown', (event) => {
     const keyName = event.key;
     const keyCode = event.code;
     const p = ["NumpadAdd", "NumpadSubtract", "NumpadDivide", "NumpadMultiply"]
 
-    for (let i = 0; i < numButtons.length; i++) {
-        document.getElementById("" + i + "").onclick = function () {
+    for (let i = 0; i < 10; i++) {
+        if (keyName === i.toString()) {
             if(outputBox.innerText === "0") {
                 outputBox.innerText = "" + i + ""
             } else {
                 outputBox.innerText += "" + i + ""
             }
         }
-
-        if (parseInt(keyName) === i) {
-            if(outputBox.innerText === "0") {
-                outputBox.innerText = keyName
-            } else {
-                outputBox.innerText += keyName
-            }
-        }
     }
 
     for(let i = 0; i < p.length; i++) {
         if (keyCode === p[i]) {
-            if(outputBox.innerText !== "0") {
+            if(outputBox.innerText.slice(-1) !== "+" &&
+                outputBox.innerText.slice(-1) !== "-" &&
+                outputBox.innerText.slice(-1) !== "*" &&
+                outputBox.innerText.slice(-1) !== "/") {
                 outputBox.innerText += keyName
             }
         }
@@ -55,19 +62,22 @@ document.addEventListener('keydown', (event) => {
 
 function clearInput() {
     outputBox.innerText = "0"
-    document.getElementById("xtra").innerText = ""
 }
 
 function bckspcInput() {
     outputBox.innerText = outputBox.innerText.slice(0, -1)
-    document.getElementById("xtra").innerText = ""
     if (outputBox.innerText <= "0") {
         outputBox.innerText = "0"
     }
 }
 
 function operator(x) {
-    outputBox.innerText += x
+    if(outputBox.innerText.slice(-1) !== "+" &&
+        outputBox.innerText.slice(-1) !== "-" &&
+        outputBox.innerText.slice(-1) !== "*" &&
+        outputBox.innerText.slice(-1) !== "/") {
+        outputBox.innerText += x
+    }
 }
 
 function equals() {

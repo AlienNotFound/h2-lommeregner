@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bdd3f1d9-804f-4c11-b356-091c565329e1" name="Changes" comment="Finished up JQ">
-      <change afterPath="$PROJECT_DIR$/src/tsScript.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsCalc.html" afterDir="false" />
+    <list default="true" id="bdd3f1d9-804f-4c11-b356-091c565329e1" name="Changes" comment="Added node_modules to ignore file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamicSetup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/dynamicSetup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQueryCalc.html" beforeDir="false" afterPath="$PROJECT_DIR$/jQueryCalc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jqScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/jqScript.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery-3.6.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/jquery-3.6.1.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tsScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/tsScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tsScript.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/tsScript.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +24,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dev" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitToolBoxStore">
@@ -43,7 +42,11 @@
                 <list>
                   <RecentBranch>
                     <option name="branchName" value="master" />
-                    <option name="lastUsedInstant" value="1661517944" />
+                    <option name="lastUsedInstant" value="1663144543" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="dev" />
+                    <option name="lastUsedInstant" value="1663144528" />
                   </RecentBranch>
                 </list>
               </option>
@@ -98,7 +101,7 @@
       <workItem from="1661755772509" duration="1399000" />
       <workItem from="1661783395997" duration="5432000" />
       <workItem from="1661859358666" duration="1447000" />
-      <workItem from="1663143270406" duration="941000" />
+      <workItem from="1663143270406" duration="9783000" />
     </task>
     <task id="LOCAL-00001" summary="JavaScript calc done">
       <created>1661541769825</created>
@@ -149,7 +152,21 @@
       <option name="project" value="LOCAL" />
       <updated>1662454217731</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Cleaned up and added TypeScript">
+      <created>1663144392709</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1663144392709</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added node_modules to ignore file">
+      <created>1663144465262</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1663144465262</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,6 +195,8 @@
     <MESSAGE value="Cleaned up JS" />
     <MESSAGE value="Save" />
     <MESSAGE value="Finished up JQ" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished up JQ" />
+    <MESSAGE value="Cleaned up and added TypeScript" />
+    <MESSAGE value="Added node_modules to ignore file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added node_modules to ignore file" />
   </component>
 </project>

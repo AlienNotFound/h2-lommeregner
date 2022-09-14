@@ -37,11 +37,6 @@ h1 {
     text-align: center;
 }
 
-#xtra {
-    font-style: italic;
-    font-family: 'Silkscreen', cursive;
-}
-
 #outputBox {
     margin-bottom: 5px;
     padding: 0 3px;

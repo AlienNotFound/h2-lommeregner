@@ -1,34 +1,40 @@
 var outputBox = document.getElementById("output");
 outputBox.innerHTML = "0";
 var numButtons = document.getElementsByClassName("numb");
+var _loop_1 = function (i) {
+    var numBtn = document.getElementById("" + i + "");
+    numBtn.onclick = function () {
+        if (outputBox.innerText === "0") {
+            outputBox.innerText = "" + i + "";
+        }
+        else {
+            outputBox.innerText += "" + i + "";
+        }
+    };
+};
+for (var i = 0; i < numButtons.length; i++) {
+    _loop_1(i);
+}
 document.addEventListener('keydown', function (event) {
     var keyName = event.key;
     var keyCode = event.code;
     var p = ["NumpadAdd", "NumpadSubtract", "NumpadDivide", "NumpadMultiply"];
-    var _loop_1 = function (i) {
-        document.getElementById("" + i + "").onclick = function () {
+    for (var i = 0; i < 10; i++) {
+        if (keyName === i.toString()) {
             if (outputBox.innerText === "0") {
                 outputBox.innerText = "" + i + "";
             }
             else {
                 outputBox.innerText += "" + i + "";
             }
-        };
-        if (parseInt(keyName) === i) {
-            if (outputBox.innerText === "0") {
-                outputBox.innerText = keyName;
-            }
-            else {
-                outputBox.innerText += keyName;
-            }
         }
-    };
-    for (var i = 0; i < numButtons.length; i++) {
-        _loop_1(i);
     }
     for (var i = 0; i < p.length; i++) {
         if (keyCode === p[i]) {
-            if (outputBox.innerText !== "0") {
+            if (outputBox.innerText.slice(-1) !== "+" &&
+                outputBox.innerText.slice(-1) !== "-" &&
+                outputBox.innerText.slice(-1) !== "*" &&
+                outputBox.innerText.slice(-1) !== "/") {
                 outputBox.innerText += keyName;
             }
         }
@@ -50,17 +56,20 @@ document.addEventListener('keydown', function (event) {
 });
 function clearInput() {
     outputBox.innerText = "0";
-    document.getElementById("xtra").innerText = "";
 }
 function bckspcInput() {
     outputBox.innerText = outputBox.innerText.slice(0, -1);
-    document.getElementById("xtra").innerText = "";
     if (outputBox.innerText <= "0") {
         outputBox.innerText = "0";
     }
 }
 function operator(x) {
-    outputBox.innerText += x;
+    if (outputBox.innerText.slice(-1) !== "+" &&
+        outputBox.innerText.slice(-1) !== "-" &&
+        outputBox.innerText.slice(-1) !== "*" &&
+        outputBox.innerText.slice(-1) !== "/") {
+        outputBox.innerText += x;
+    }
 }
 function equals() {
     var word;
